@@ -16,7 +16,7 @@ pipeline {
                     extensions: [],
                     userRemoteConfigs: [[
                         // credentialsId: '',
-                        url: '\https://github.com/pmeharg/nodegoat-reachability.git'
+                        url: 'https://github.com/pmeharg/nodegoat-reachability.git'
                     ]]
                 )
             }
