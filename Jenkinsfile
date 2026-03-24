@@ -25,9 +25,11 @@ pipeline {
                 )
             }
         }
-        stage('Install'){
+        stage('Build') {
             steps {
-                npm install
+                nodejs(nodeJSInstallationName: 'node', configId: '<config-file-provider-id>') {
+                    sh 'npm config ls'
+                }
             }
         }
         
