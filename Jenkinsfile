@@ -4,6 +4,10 @@ pipeline {
     // 'any' means Jenkins will allocate an agent for the job.
     agent any
 
+    tools {
+        nodejs "node"
+    }
+
     // The 'stages' block defines the logical steps of the pipeline.
     stages {
         // This stage checks out the code from the Git repository using the scmGit step.
