@@ -25,13 +25,13 @@ pipeline {
                 )
             }
         }
-        stage('Build') {
-            steps {
-                nodejs(nodeJSInstallationName: 'node', configId: '<config-file-provider-id>') {
-                    sh 'npm config ls'
-                }
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         nodejs(nodeJSInstallationName: 'node', configId: '<config-file-provider-id>') {
+        //             sh 'npm config ls'
+        //         }
+        //     }
+        // }
         
         // Second stage: Performs the Sonatype Lifecycle evaluation.
         stage('Sonatype Lifecycle Evaluation') {
