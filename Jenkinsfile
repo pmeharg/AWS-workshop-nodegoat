@@ -25,6 +25,12 @@ pipeline {
                 )
             }
         }
+        stage('Install'){
+            steps {
+                npm install
+            }
+        }
+        
         // Second stage: Performs the Sonatype Lifecycle evaluation.
         stage('Sonatype Lifecycle Evaluation') {
             steps {
