@@ -43,7 +43,7 @@ pipeline {
                 // This example uses a placeholder command that you would replace with your actual command.
                 nexusPolicyEvaluation (
                     iqApplication: selectedApplication('nodegoat-reachability'), 
-                    iqInstanceId: 'NexusIQServer', 
+                    iqInstanceId: 'Lifecycle', 
                     iqStage: 'build', 
                     iqScanPatterns: [[scanPattern: '**/*.js'], [scanPattern: '**/*.zip'], [scanPattern:"**/package*.json"]],
                     reachability: [ 
